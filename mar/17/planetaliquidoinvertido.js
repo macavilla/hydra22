@@ -1,4 +1,4 @@
-solid(1, 1, 1)
+solid(.3, 1, 1)
 .diff(
   shape(99, .451).scale(1, 1, ()=>window.innerWidth / window.innerHeight )
   .mask(
@@ -8,10 +8,8 @@ solid(1, 1, 1)
       osc(5, .4).rotate(0, 0.5 )
     )
     .modulateRotate(
-      osc(5, .4).rotate(0, 0.5 )
-    )
-    .scale(.25)
+      noise(5, .4).scrollY(0, 0.5 )
+    ).scale(.07)
   )
-
 )
 .out()
