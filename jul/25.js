@@ -8,7 +8,7 @@ solid(1, .4, .4)
   .modulate(osc(90).modulateRotate(noise(100)).modulateScrollX(noise(1).modulatePixelate(osc(3)), .9))
 )
 .mult(
-  shape(99, [.1, .7, .8  .9].smooth(.9)).scale(1, 1, ()=>window.innerWidth/window.innerHeight).hue(.71)
+  shape(99, [.1, .30].smooth(.7)).scale(1, 1, ()=>window.innerWidth/window.innerHeight).hue(.71)
   //.modulateScrollY(o0).modulateScrollX(osc(7, .03))
   .modulateScale(src(s0))
   .scroll(0, 0)
